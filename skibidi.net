@@ -236,7 +236,7 @@ end)
 
 CreateElement("Stroke", function(Color, Thickness)
 	local Stroke = Create("UIStroke", {
-		Color = Color or Color3.fromRGB(255, 255, 255),
+		Color = Color or Color3.fromRGB(212, 175, 55),
 		Thickness = Thickness or 1
 	})
 	return Stroke
@@ -269,7 +269,7 @@ end)
 
 CreateElement("Frame", function(Color)
 	local Frame = Create("Frame", {
-		BackgroundColor3 = Color or Color3.fromRGB(255, 255, 255),
+		BackgroundColor3 = Color or Color3.fromRGB(212, 175, 55),
 		BorderSizePixel = 0
 	})
 	return Frame
@@ -277,7 +277,7 @@ end)
 
 CreateElement("RoundFrame", function(Color, Scale, Offset)
 	local Frame = Create("Frame", {
-		BackgroundColor3 = Color or Color3.fromRGB(255, 255, 255),
+		BackgroundColor3 = Color or Color3.fromRGB(212, 175, 55),
 		BorderSizePixel = 0
 	}, {
 		Create("UICorner", {
@@ -499,7 +499,7 @@ function Library:MakeWindow(WindowConfig)
 		Size = UDim2.new(1, 0, 0, 50)
 	})
 
-	local WindowStuff = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 10), {
+	local WindowStuff = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(212, 175, 55), 0, 10), {
 		Size = UDim2.new(0, 150, 1, -50),
 		Position = UDim2.new(0, 0, 0, 50)
 	}), {
@@ -570,7 +570,7 @@ AddThemeObject(SetProps(MakeElement("Label","Name Hidden", WindowConfig.HidePrem
 		Position = UDim2.new(0, 0, 1, -1)
 	}), "Stroke")
 
-	local MainWindow = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 10), {
+	local MainWindow = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(212, 175, 55, 0, 10), {
 		Parent = Container,
 		Position = UDim2.new(0.5, -307, 0.5, -172),
 		Size = UDim2.new(0, 615, 0, 344),
@@ -582,7 +582,7 @@ AddThemeObject(SetProps(MakeElement("Label","Name Hidden", WindowConfig.HidePrem
 		}), {
 			WindowName,
 			WindowTopBarLine,
-			AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 7), {
+			AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(212, 175, 55), 0, 7), {
 				Size = UDim2.new(0, 70, 0, 30),
 				Position = UDim2.new(1, -90, 0, 10)
 			}), {
