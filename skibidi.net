@@ -440,7 +440,7 @@ function Library:MakeWindow(WindowConfig)
 	local UIHidden = false
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "Ocean Service"
+	WindowConfig.Name = WindowConfig.Name or "Froxy Service"
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
@@ -550,7 +550,7 @@ AddThemeObject(SetProps(MakeElement("Label","Name Hidden", WindowConfig.HidePrem
     Font = Enum.Font.GothamBold,
     ClipsDescendants = true
 }), "Text"),
-			AddThemeObject(SetProps(MakeElement("Label", "Ocean service", 12), {
+			AddThemeObject(SetProps(MakeElement("Label", ".gg/GetFroxy", 12), {
 				Size = UDim2.new(1, -60, 0, 12),
 				Position = UDim2.new(0, 50, 1, -25),
 				Visible = not WindowConfig.HidePremium
@@ -740,7 +740,7 @@ AddThemeObject(SetProps(MakeElement("Label","Name Hidden", WindowConfig.HidePrem
 			TabFrame.Ico.Image = GetIcon(TabConfig.Icon)
 		end	
 
-		local Container = AddThemeObject(SetChildren(SetProps(MakeElement("ScrollFrame", Color3.fromRGB(255, 255, 255), 5), {
+		local Container = AddThemeObject(SetChildren(SetProps(MakeElement("ScrollFrame", Color3.fromRGB(212, 175, 55), 5), {
 			Size = UDim2.new(1, -150, 1, -50),
 			Position = UDim2.new(0, 150, 0, 50),
 			Parent = MainWindow,
